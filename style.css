@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cube{
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  transform-origin: 7.5em 7.5em;
+  position: relative;
+  width: 15em;
+  height: 15em;
+}
+
+.one{
+  transform: rotateX(90deg) translate3d(0, 7.5em, 0);
+  transform-origin: bottom;
+  background-color: #FFDAC1;
+}
+
+.two{
+  transform: translate3d(0, 0, 7.5em);
+  background-color: #E2F0CB;
+}
+
+.three{
+  transform: rotateY(90deg) translate3d(-7.5em, 0, 0);
+  transform-origin: left;
+  background-color: #B5EAD7;
+}
+
+.four{
+  transform: rotateX(-90deg) translate3d(0, -7.5em, 0);
+  transform-origin: top;
+  background-color: #C7CEEA;
+}
+
+.five{
+  transform: rotateY(-90deg) translate3d(7.5em, 0, 0);
+  transform-origin: right;
+  background-color: #ff9aa2;
+}
+
+.six{
+transform: translate3d(0, 0, -7.5em);
+background-color: #ffb7b2;
+}
+
+.face{
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
