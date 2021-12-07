@@ -14,17 +14,26 @@ body{
   position: relative;
   width: 15em;
   height: 15em;
+  display: grid;
+}
+
+.knife{
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  user-select: none;
 }
 
 .one{
-  transform: rotateX(90deg) translate3d(0, 7.5em, 0);
-  transform-origin: bottom;
-  background-color: #FFDAC1;
+  transform: translate3d(0, 0, 7.5em);
+  background-color: #e2f0cb;
 }
 
 .two{
-  transform: translate3d(0, 0, 7.5em);
-  background-color: #E2F0CB;
+  transform: rotateX(90deg) translate3d(0, 7.5em, 0);
+  transform-origin: bottom;
+  background-color: #FFDAC1;
 }
 
 .three{
@@ -42,12 +51,12 @@ body{
 .five{
   transform: rotateY(-90deg) translate3d(7.5em, 0, 0);
   transform-origin: right;
-  background-color: #ff9aa2;
+  background-color: #f8f1ae;
 }
 
 .six{
-transform: translate3d(0, 0, -7.5em);
-background-color: #ffb7b2;
+  transform: translate3d(0, 0, -7.5em);
+  background-color: #ffb7b2;
 }
 
 .face{
@@ -56,4 +65,30 @@ background-color: #ffb7b2;
   position: absolute;
   background-size: cover;
   background-position: center;
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-family: sans-serif;
+  opacity: 100%;
+  user-select: none;
+}
+
+.text{
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  font-family: 'comic sans ms';
+  user-select: none;
+  visibility: hidden;
+}
+
+img{
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  max-height: 7.5em;
+  user-select: none;
 }
